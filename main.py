@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Path, HTTPException
+from fastapi import FastAPI, Path, HTTPException, Query
 import json 
 app=FastAPI()
 
@@ -39,4 +39,7 @@ def patients(list_index : int =Path(..., title="Put Patients Index",description=
 
 
 
+@app.get('/sort')
 
+def sort_patients(sort_by : str =Query(..., description="based on age, hight, bmi"), order: str =Query('asc',description="sort in ascending or decending")):
+    
