@@ -3,9 +3,11 @@ import json
 app=FastAPI()
 
 def load_data():
-    with open('patient.json','/r') as f:
+    with open('patients.json','r') as f:
         data=json.load(f)
     return data
+
+
 @app.get('/')
 def hello():
     return {'message':'hello world hiii'}
@@ -15,7 +17,7 @@ def hello():
 def about():
     return {'message':'aasif is a idle boy'}
 
-@app.get('/views')
+@app.get('/view')
 
 def view():
     data=load_data()
