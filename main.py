@@ -49,4 +49,4 @@ def sort_patients(sort_by : str =Query(..., description="based on age, hight, bm
         raise HTTPException(status_code=404,detail=f"Invalid order,keep it in {'asc','desc'}")
     
     data=load_data()
-    
+    sorted_data = sorted(data.values(), key=lambda x: x.get(sort_by, 0), reverse=sort_order)
