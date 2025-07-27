@@ -1,0 +1,74 @@
+{
+  "patients": [
+    {
+      "patient_id": "P001",
+      "name": "John Doe",
+      "age": 45,
+      "gender": "Male",
+      "contact": {
+        "phone": "+1234567890",
+        "email": "john.doe@example.com",
+        "address": "123 Main St, Cityville, USA"
+      },
+      "medical_history": ["Hypertension", "Type 2 Diabetes"],
+      "current_medications": ["Metformin", "Lisinopril"],
+      "last_visit": "2023-10-15"
+    },
+    {
+      "patient_id": "P002",
+      "name": "Jane Smith",
+      "age": 32,
+      "gender": "Female",
+      "contact": {
+        "phone": "+1987654321",
+        "email": "jane.smith@example.com",
+        "address": "456 Oak Ave, Townsville, USA"
+      },
+      "medical_history": ["Asthma", "Migraine"],
+      "current_medications": ["Albuterol", "Sumatriptan"],
+      "last_visit": "2023-11-20"
+    },
+    {
+      "patient_id": "P003",
+      "name": "Robert Johnson",
+      "age": 60,
+      "gender": "Male",
+      "contact": {
+        "phone": "+1122334455",
+        "email": "robert.j@example.com",
+        "address": "789 Pine Rd, Villagetown, USA"
+      },
+      "medical_history": ["COPD", "Arthritis"],
+      "current_medications": ["Advair", "Ibuprofen"],
+      "last_visit": "2023-09-05"
+    },
+    {
+      "patient_id": "P004",
+      "name": "Emily Davis",
+      "age": 28,
+      "gender": "Female",
+      "contact": {
+        "phone": "+1567890123",
+        "email": "emily.d@example.com",
+        "address": "321 Elm Blvd, Hamletcity, USA"
+      },
+      "medical_history": ["Depression"],
+      "current_medications": ["Sertraline"],
+      "last_visit": "2023-12-10"
+    },
+    {
+      "patient_id": "P005",
+      "name": "Michael Brown",
+      "age": 50,
+      "gender": "Male",
+      "contact": {
+        "phone": "+1345678901",
+        "email": "michael.b@example.com",
+        "address": "654 Maple Ln, Countryside, USA"
+      },
+      "medical_history": ["High Cholesterol", "GERD"],
+      "current_medications": ["Atorvastatin", "Omeprazole"],
+      "last_visit": "2023-10-30"
+    }
+  ]
+}
