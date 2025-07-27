@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Path
+from fastapi import FastAPI, Path, HTTPException
 import json 
 app=FastAPI()
 
@@ -26,11 +26,13 @@ def view():
 
 @app.get('/patients/{list_index}')
 
-def patients(list_index : int =Path(..., title="Put Patients Index",description="there are only 5 patients.",ge=0,le=len(load_data())-1,example="2")):
+def patients(list_index : int =Path(..., title="Put Patients Index",description="there are only 5 patients.")): #,ge=0,le=len(load_data())-1,example="2") we can add this also,there are some benifits
     data=load_data()
+    # x=len(data)
     # return data[list_index]['contact']
     if list_index>len(data):
-        return {"Error":"There are only % patients.Give 0-5 index"}
+        # return {"Error":"There are only % patients.Give 0-5 index. {list_index} is not appropiate"}
+        raise HTTPException(status_code=404, detail=" ID not found.")
     for i in range(len(data)):
         if i==list_index:
             return data[i]
