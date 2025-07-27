@@ -42,4 +42,10 @@ def patients(list_index : int =Path(..., title="Put Patients Index",description=
 @app.get('/sort')
 
 def sort_patients(sort_by : str =Query(..., description="based on age, hight, bmi"), order: str =Query('asc',description="sort in ascending or decending")):
+    valid_fields=['age']
+    if sort_by not in valid_fields:
+        raise HTTPException(status_code=404, detail=f"Invalid field. keep input on {valid_fields}")
+    if order not in ['asc','desc']:
+        raise HTTPException(status_code=404,detail=f"Invalid order,keep it in {'asc','desc'}")
+    
     
