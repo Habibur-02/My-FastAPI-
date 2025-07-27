@@ -5,7 +5,7 @@ app=FastAPI()
 def load_data():
     with open('patients.json','r') as f:
         data=json.load(f)
-    return data['patients'][0]['contact']['email']
+    return data['patients']
 
 
 @app.get('/')
@@ -22,5 +22,14 @@ def about():
 def view():
     data=load_data()
     return data
+
+
+@app.get('/patients/{list_index}')
+
+def patients(list_index : int):
+    data=load_data()
+    return data[list_index]['contact']
+
+    
 
 
