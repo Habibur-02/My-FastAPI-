@@ -28,8 +28,13 @@ def view():
 
 def patients(list_index : int):
     data=load_data()
-    return data[list_index]['contact']
+    # return data[list_index]['contact']
+    if list_index>len(data):
+        return {"Error":"There are only % patients.Give 0-5 index"}
+    for i in range(len(data)):
+        if i==list_index:
+            return data[i]
 
-    
+
 
 
