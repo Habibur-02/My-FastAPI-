@@ -15,7 +15,7 @@ def hello():
 def about():
     return {'message':'aasif is a idle boy'}
 
-@app.get('/view')
+@app.get('/views')
 
 def view():
     data=load_data()
