@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Path
 import json 
 app=FastAPI()
 
@@ -26,7 +26,7 @@ def view():
 
 @app.get('/patients/{list_index}')
 
-def patients(list_index : int):
+def patients(list_index : int =Path(..., title="Put Patients Index",description="there are only 5 patients.",ge=0,le=len(load_data())-1,example="2")):
     data=load_data()
     # return data[list_index]['contact']
     if list_index>len(data):
