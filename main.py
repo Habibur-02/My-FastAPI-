@@ -39,14 +39,51 @@ def patients(list_index : int =Path(..., title="Put Patients Index",description=
 
 
 
-@app.get('/sort')
+# @app.get('/sort')
 
-def sort_patients(sort_by : str =Query(..., description="based on age, hight, bmi"), order: str =Query('asc',description="sort in ascending or decending")):
-    valid_fields=['age']
-    if sort_by not in valid_fields:
-        raise HTTPException(status_code=404, detail=f"Invalid field. keep input on {valid_fields}")
-    if order not in ['asc','desc']:
-        raise HTTPException(status_code=404,detail=f"Invalid order,keep it in {'asc','desc'}")
+# def sort_patients(sort_by : str =Query(..., description="based on age, hight, bmi"), order: str =Query('asc',description="sort in ascending or decending")):
+#     valid_fields=['age']
+#     if sort_by not in valid_fields:
+#         raise HTTPException(status_code=404, detail=f"Invalid field. keep input on {valid_fields}")
+#     if order not in ['asc','desc']:
+#         raise HTTPException(status_code=404,detail=f"Invalid order,keep it in {'asc','desc'}")
     
-    data=load_data()
-    sorted_data = sorted(data.values(), key=lambda x: x.get(sort_by, 0), reverse=sort_order)
+#     data=load_data()
+#     sorted_data = sorted(data, key=lambda x: x.get(sort_by, 0), reverse=sort_order)
+@app.get('/sort')
+def sort_patients(
+    sort_by: str = Query(default="age", description="Sort by field (currently only 'age' supported)"),
+    order: str = Query(default="asc", description="Sort order: 'asc' or 'desc'")
+):
+    data = load_data()
+    
+    # Currently only supporting age sorting
+    valid_fields = ['age']
+    
+    if sort_by not in valid_fields:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid sort field. Only these fields are supported: {valid_fields}"
+        )
+    
+    if order not in ['asc', 'desc']:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid order. Must be either 'asc' or 'desc'"
+        )
+    
+    # Sort the data
+    reverse_order = (order == 'desc')
+    try:
+        sorted_data = sorted(data, key=lambda x: x[sort_by], reverse=reverse_order)
+        return sorted_data
+    except KeyError:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Field '{sort_by}' not found in patient records"
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"An error occurred while sorting: {str(e)}"
+        )
