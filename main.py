@@ -48,4 +48,5 @@ def sort_patients(sort_by : str =Query(..., description="based on age, hight, bm
     if order not in ['asc','desc']:
         raise HTTPException(status_code=404,detail=f"Invalid order,keep it in {'asc','desc'}")
     
+    data=load_data()
     
