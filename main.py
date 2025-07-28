@@ -57,7 +57,6 @@ def sort_patients(
 ):
     data = load_data()
     
-    # Currently only supporting age sorting
     valid_fields = ['age']
     
     if sort_by not in valid_fields:
