@@ -72,7 +72,7 @@ def sort_patients(
             detail="Invalid order. Must be either 'asc' or 'desc'"
         )
     
-    # Sort the data
+    
     reverse_order = (order == 'desc')
     try:
         sorted_data = sorted(data, key=lambda x: x[sort_by], reverse=reverse_order)
@@ -87,3 +87,7 @@ def sort_patients(
             status_code=500,
             detail=f"An error occurred while sorting: {str(e)}"
         )
+    
+
+
+    
