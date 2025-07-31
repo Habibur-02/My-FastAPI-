@@ -56,9 +56,23 @@ class Patient(BaseModel):
 
     @computed_field
     @property
-    def BMI(self) -> float:
+    def bmi(self) -> float:
         bmi= self.weight/(self.height**2)
         return bmi
+    
+    @computed_field
+    @property
+    def verdict(self) -> str:
+        # bmi= self.weight/(self.height**2)
+
+        if self.bmi < 18.5:
+            return 'Underweight'
+        elif self.bmi < 25:
+            return 'Normal'
+        elif self.bmi < 30:
+            return 'Normal'
+        else:
+            return 'Obese'
 
 
 def load_data():
@@ -78,7 +92,8 @@ def home():
     for i,j in dataa.items():
         val=Patient(**j)
         x=val.model_dump()
-        x["BMI"]=val.BMI
+        x["bmi"]=val.bmi
+        x["verdict"]=val.verdict
         data[i]=x
 
     # with open("saved_data.json","w") as f:
@@ -86,6 +101,7 @@ def home():
     # return {"message": "Saved succesfully"}
     save_data(data)
     return{"kicchu na":"bc"}
+
 
 
 @app.get('/patient/{index}')

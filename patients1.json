@@ -52,7 +52,8 @@
             "relation": "husband",
             "phone": "9876543211"
         },
-        "BMI": 33.057851239669425
+        "bmi": 33.057851239669425,
+        "verdict": "Obese"
     },
     "P002": {
         "name": "Ravi Mehta",
@@ -100,7 +101,8 @@
             "relation": "wife",
             "phone": "8877665545"
         },
-        "BMI": 27.755102040816325
+        "bmi": 27.755102040816325,
+        "verdict": "Normal"
     },
     "P003": {
         "name": "Sneha Kulkarni",
@@ -146,7 +148,8 @@
             "relation": "father",
             "phone": "7788996656"
         },
-        "BMI": 17.578124999999996
+        "bmi": 17.578124999999996,
+        "verdict": "Underweight"
     },
     "P004": {
         "name": "Arjun Verma",
@@ -186,7 +189,8 @@
             "relation": "sister",
             "phone": "9988776656"
         },
-        "BMI": 27.777777777777775
+        "bmi": 27.777777777777775,
+        "verdict": "Normal"
     },
     "P005": {
         "name": "Neha Sinha",
@@ -234,6 +238,7 @@
             "relation": "brother",
             "phone": "8899776656"
         },
-        "BMI": 31.217481789802285
+        "bmi": 31.217481789802285,
+        "verdict": "Obese"
     }
 }
