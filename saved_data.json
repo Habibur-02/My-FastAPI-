@@ -1,0 +1,239 @@
+{
+    "P001": {
+        "name": "Ananya Verma",
+        "city": "Guwahati",
+        "state": "Assam",
+        "age": 28,
+        "gender": "female",
+        "contact": "9876543210",
+        "email": "ananya.verma@example.com",
+        "height": 1.65,
+        "weight": 90.0,
+        "blood_pressure": "140/90",
+        "blood_group": "B+",
+        "pulse_rate": 82,
+        "oxygen_level": 97,
+        "temperature": 98.4,
+        "allergies": [
+            "peanuts",
+            "dust"
+        ],
+        "chronic_conditions": [
+            "PCOS",
+            "insulin resistance"
+        ],
+        "medications": [
+            {
+                "name": "Metformin",
+                "dose": "500mg",
+                "frequency": "twice daily"
+            },
+            {
+                "name": "Atorvastatin",
+                "dose": "20mg",
+                "frequency": "nightly"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 112.0,
+            "hdl": 42.0,
+            "ldl": 148.0,
+            "triglycerides": 180.0,
+            "date": "2023-05-10"
+        },
+        "last_visit": "2023-05-15",
+        "next_appointment": "2023-08-20",
+        "insurance": {
+            "provider": "Star Health",
+            "policy_number": "SH2023456"
+        },
+        "emergency_contact": {
+            "name": "Raj Verma",
+            "relation": "husband",
+            "phone": "9876543211"
+        },
+        "BMI": 33.057851239669425
+    },
+    "P002": {
+        "name": "Ravi Mehta",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "age": 35,
+        "gender": "male",
+        "contact": "8877665544",
+        "email": "ravi.mehta@example.com",
+        "height": 1.75,
+        "weight": 85.0,
+        "blood_pressure": "130/85",
+        "blood_group": "A+",
+        "pulse_rate": 78,
+        "oxygen_level": 98,
+        "temperature": 98.1,
+        "allergies": [
+            "penicillin"
+        ],
+        "chronic_conditions": [
+            "hypertension"
+        ],
+        "medications": [
+            {
+                "name": "Losartan",
+                "dose": "50mg",
+                "frequency": "daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 98.0,
+            "hdl": 38.0,
+            "ldl": 132.0,
+            "triglycerides": 160.0,
+            "date": "2023-06-05"
+        },
+        "last_visit": "2023-06-10",
+        "next_appointment": "2023-09-05",
+        "insurance": {
+            "provider": "ICICI Lombard",
+            "policy_number": "IL2023789"
+        },
+        "emergency_contact": {
+            "name": "Priya Mehta",
+            "relation": "wife",
+            "phone": "8877665545"
+        },
+        "BMI": 27.755102040816325
+    },
+    "P003": {
+        "name": "Sneha Kulkarni",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "age": 22,
+        "gender": "female",
+        "contact": "7788996655",
+        "email": "sneha.k@example.com",
+        "height": 1.6,
+        "weight": 45.0,
+        "blood_pressure": "90/60",
+        "blood_group": "O-",
+        "pulse_rate": 85,
+        "oxygen_level": 99,
+        "temperature": 97.8,
+        "allergies": [],
+        "chronic_conditions": [
+            "iron deficiency anemia"
+        ],
+        "medications": [
+            {
+                "name": "Ferrous sulfate",
+                "dose": "325mg",
+                "frequency": "daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 88.0,
+            "hdl": 45.0,
+            "ldl": 95.0,
+            "triglycerides": 110.0,
+            "date": "2023-04-18"
+        },
+        "last_visit": "2023-04-22",
+        "next_appointment": "2023-07-30",
+        "insurance": {
+            "provider": "HDFC Ergo",
+            "policy_number": "HE2023123"
+        },
+        "emergency_contact": {
+            "name": "Amit Kulkarni",
+            "relation": "father",
+            "phone": "7788996656"
+        },
+        "BMI": 17.578124999999996
+    },
+    "P004": {
+        "name": "Arjun Verma",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "age": 40,
+        "gender": "male",
+        "contact": "9988776655",
+        "email": "arjun.verma@example.com",
+        "height": 1.8,
+        "weight": 90.0,
+        "blood_pressure": "120/80",
+        "blood_group": "AB+",
+        "pulse_rate": 72,
+        "oxygen_level": 98,
+        "temperature": 98.2,
+        "allergies": [
+            "shellfish"
+        ],
+        "chronic_conditions": [],
+        "medications": [],
+        "last_bloodwork": {
+            "glucose": 92.0,
+            "hdl": 50.0,
+            "ldl": 110.0,
+            "triglycerides": 125.0,
+            "date": "2023-05-25"
+        },
+        "last_visit": "2023-05-30",
+        "next_appointment": "2023-11-15",
+        "insurance": {
+            "provider": "Bajaj Allianz",
+            "policy_number": "BA2023567"
+        },
+        "emergency_contact": {
+            "name": "Maya Verma",
+            "relation": "sister",
+            "phone": "9988776656"
+        },
+        "BMI": 27.777777777777775
+    },
+    "P005": {
+        "name": "Neha Sinha",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "age": 30,
+        "gender": "female",
+        "contact": "8899776655",
+        "email": "neha.s@example.com",
+        "height": 1.55,
+        "weight": 75.0,
+        "blood_pressure": "135/88",
+        "blood_group": "A-",
+        "pulse_rate": 80,
+        "oxygen_level": 97,
+        "temperature": 98.0,
+        "allergies": [
+            "aspirin"
+        ],
+        "chronic_conditions": [
+            "hypothyroidism"
+        ],
+        "medications": [
+            {
+                "name": "Levothyroxine",
+                "dose": "75mcg",
+                "frequency": "daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 105.0,
+            "hdl": 40.0,
+            "ldl": 140.0,
+            "triglycerides": 175.0,
+            "date": "2023-06-01"
+        },
+        "last_visit": "2023-06-05",
+        "next_appointment": "2023-08-25",
+        "insurance": {
+            "provider": "New India Assurance",
+            "policy_number": "NI2023890"
+        },
+        "emergency_contact": {
+            "name": "Rahul Sinha",
+            "relation": "brother",
+            "phone": "8899776656"
+        },
+        "BMI": 31.217481789802285
+    }
+}

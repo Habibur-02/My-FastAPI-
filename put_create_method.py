@@ -67,8 +67,11 @@ def load_data():
     return data
 
 
+def save_data(data):
+    with open('patients1.json', 'w') as f:
+        json.dump(data, f)
 
-@app.get('/')
+@app.get('/saved')
 def home():
     dataa=load_data()
     data: Dict[str,Patient]={}
@@ -78,7 +81,10 @@ def home():
         x["BMI"]=val.BMI
         data[i]=x
 
-    return data
+    # with open("saved_data.json","w") as f:
+    #     json.dump(data,f,indent=4,default=str)
+    # return {"message": "Saved succesfully"}
+    save_data(data)
 
 
 @app.get('/patient/{index}')
