@@ -1,74 +1,152 @@
 {
-  "patients": [
-    {
-      "patient_id": "P001",
-      "name": "John Doe",
-      "age": 45,
-      "gender": "Male",
-      "contact": {
-        "phone": "+1234567890",
-        "email": "john.doe@example.com",
-        "address": "123 Main St, Cityville, USA"
-      },
-      "medical_history": ["Hypertension", "Type 2 Diabetes"],
-      "current_medications": ["Metformin", "Lisinopril"],
-      "last_visit": "2023-10-15"
-    },
-    {
-      "patient_id": "P002",
-      "name": "Jane Smith",
-      "age": 32,
-      "gender": "Female",
-      "contact": {
-        "phone": "+1987654321",
-        "email": "jane.smith@example.com",
-        "address": "456 Oak Ave, Townsville, USA"
-      },
-      "medical_history": ["Asthma", "Migraine"],
-      "current_medications": ["Albuterol", "Sumatriptan"],
-      "last_visit": "2023-11-20"
-    },
-    {
-      "patient_id": "P003",
-      "name": "Robert Johnson",
-      "age": 60,
-      "gender": "Male",
-      "contact": {
-        "phone": "+1122334455",
-        "email": "robert.j@example.com",
-        "address": "789 Pine Rd, Villagetown, USA"
-      },
-      "medical_history": ["COPD", "Arthritis"],
-      "current_medications": ["Advair", "Ibuprofen"],
-      "last_visit": "2023-09-05"
-    },
-    {
-      "patient_id": "P004",
-      "name": "Emily Davis",
-      "age": 28,
-      "gender": "Female",
-      "contact": {
-        "phone": "+1567890123",
-        "email": "emily.d@example.com",
-        "address": "321 Elm Blvd, Hamletcity, USA"
-      },
-      "medical_history": ["Depression"],
-      "current_medications": ["Sertraline"],
-      "last_visit": "2023-12-10"
-    },
-    {
-      "patient_id": "P005",
-      "name": "Michael Brown",
-      "age": 50,
-      "gender": "Male",
-      "contact": {
-        "phone": "+1345678901",
-        "email": "michael.b@example.com",
-        "address": "654 Maple Ln, Countryside, USA"
-      },
-      "medical_history": ["High Cholesterol", "GERD"],
-      "current_medications": ["Atorvastatin", "Omeprazole"],
-      "last_visit": "2023-10-30"
+  "P001": {
+    "name": "Ananya Verma",
+    "city": "Guwahati",
+    "state": "Assam",
+    "age": 28,
+    "gender": "female",
+    "contact": "9876543210",
+    "email": "ananya.verma@example.com",
+    "height": 1.65,
+    "weight": 90.0,
+    "bmi": 33.06,
+    "blood_pressure": "140/90",
+    "blood_group": "B+",
+    "allergies": ["peanuts", "dust"],
+    "medications": ["Metformin", "Atorvastatin"],
+    "last_visit": "2023-05-15",
+    "next_appointment": "2023-08-20",
+    "verdict": "Obese",
+    "risk_factors": ["hypertension", "diabetes"],
+    "emergency_contact": {
+      "name": "Raj Verma",
+      "relation": "husband",
+      "phone": "9876543211"
     }
-  ]
+  },
+  "P002": {
+    "name": "Ravi Mehta",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "age": 35,
+    "gender": "male",
+    "contact": "8877665544",
+    "email": "ravi.mehta@example.com",
+    "height": 1.75,
+    "weight": 85,
+    "bmi": 27.76,
+    "blood_pressure": "130/85",
+    "blood_group": "A+",
+    "allergies": ["penicillin"],
+    "medications": ["Losartan"],
+    "last_visit": "2023-06-10",
+    "next_appointment": "2023-09-05",
+    "verdict": "Overweight",
+    "risk_factors": ["high cholesterol"],
+    "emergency_contact": {
+      "name": "Priya Mehta",
+      "relation": "wife",
+      "phone": "8877665545"
+    }
+  },
+  "P003": {
+    "name": "Sneha Kulkarni",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "age": 22,
+    "gender": "female",
+    "contact": "7788996655",
+    "email": "sneha.k@example.com",
+    "height": 1.6,
+    "weight": 45,
+    "bmi": 17.58,
+    "blood_pressure": "90/60",
+    "blood_group": "O-",
+    "allergies": [],
+    "medications": ["Iron supplements"],
+    "last_visit": "2023-04-22",
+    "next_appointment": "2023-07-30",
+    "verdict": "Underweight",
+    "risk_factors": ["anemia"],
+    "emergency_contact": {
+      "name": "Amit Kulkarni",
+      "relation": "father",
+      "phone": "7788996656"
+    }
+  },
+  "P004": {
+    "name": "Arjun Verma",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "age": 40,
+    "gender": "male",
+    "contact": "9988776655",
+    "email": "arjun.verma@example.com",
+    "height": 1.8,
+    "weight": 90.0,
+    "bmi": 27.78,
+    "blood_pressure": "120/80",
+    "blood_group": "AB+",
+    "allergies": ["shellfish"],
+    "medications": [],
+    "last_visit": "2023-05-30",
+    "next_appointment": "2023-11-15",
+    "verdict": "Normal",
+    "risk_factors": [],
+    "emergency_contact": {
+      "name": "Maya Verma",
+      "relation": "sister",
+      "phone": "9988776656"
+    }
+  },
+  "P005": {
+    "name": "Neha Sinha",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "age": 30,
+    "gender": "female",
+    "contact": "8899776655",
+    "email": "neha.s@example.com",
+    "height": 1.55,
+    "weight": 75,
+    "bmi": 31.22,
+    "blood_pressure": "135/88",
+    "blood_group": "A-",
+    "allergies": ["aspirin"],
+    "medications": ["Thyroxine"],
+    "last_visit": "2023-06-05",
+    "next_appointment": "2023-08-25",
+    "verdict": "Obese",
+    "risk_factors": ["hypothyroidism"],
+    "emergency_contact": {
+      "name": "Rahul Sinha",
+      "relation": "brother",
+      "phone": "8899776656"
+    }
+  },
+  "P006": {
+    "name": "Vikram Patel",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "age": 45,
+    "gender": "male",
+    "contact": "7766554433",
+    "email": "vikram.p@example.com",
+    "height": 1.72,
+    "weight": 82,
+    "bmi": 27.71,
+    "blood_pressure": "142/92",
+    "blood_group": "B-",
+    "allergies": ["sulfa drugs"],
+    "medications": ["Metoprolol", "Simvastatin"],
+    "last_visit": "2023-07-10",
+    "next_appointment": "2023-10-10",
+    "verdict": "Overweight",
+    "risk_factors": ["hypertension", "family history of heart disease"],
+    "emergency_contact": {
+      "name": "Geeta Patel",
+      "relation": "wife",
+      "phone": "7766554434"
+    }
+  }
 }

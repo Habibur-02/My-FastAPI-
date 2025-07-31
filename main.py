@@ -40,7 +40,6 @@ def patients(list_index : int =Path(..., title="Put Patients Index",description=
 
 
 # @app.get('/sort')
-
 # def sort_patients(sort_by : str =Query(..., description="based on age, hight, bmi"), order: str =Query('asc',description="sort in ascending or decending")):
 #     valid_fields=['age']
 #     if sort_by not in valid_fields:
@@ -50,6 +49,8 @@ def patients(list_index : int =Path(..., title="Put Patients Index",description=
     
 #     data=load_data()
 #     sorted_data = sorted(data, key=lambda x: x.get(sort_by, 0), reverse=sort_order)
+
+
 @app.get('/sort')
 def sort_patients(
     sort_by: str = Query(default="age", description="Sort by field (currently only 'age' supported)"),

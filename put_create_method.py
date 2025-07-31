@@ -6,3 +6,20 @@ import json
 
 app=FastAPI()
 
+
+
+def load_data():
+    with open('patients.json','r') as f:
+        data=json.load(f)
+    return data
+
+
+
+@app.get('/')
+def home():
+    dataa=load_data()
+    return dataa
+
+
+
+
