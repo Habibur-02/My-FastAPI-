@@ -34,6 +34,7 @@ class Patient(BaseModel):
     city: str
     state: str
     age: int
+    
     gender: str
     contact: str
     email: EmailStr
@@ -53,6 +54,12 @@ class Patient(BaseModel):
     insurance: Insurance
     emergency_contact: EmergencyContact
 
+    @computed_field
+    @property
+    def BMI(self) -> float:
+        bmi= self.weight/(self.height**2)
+        return bmi
+
 
 def load_data():
     with open('patients.json','r') as f:
@@ -67,10 +74,21 @@ def home():
     data: Dict[str,Patient]={}
     for i,j in dataa.items():
         val=Patient(**j)
-        data[i]=val.model_dump()
+        x=val.model_dump()
+        x["BMI"]=val.BMI
+        data[i]=x
+
     return data
 
 
+@app.get('/patient/{index}')
+
+def view(index : str):
+    data=load_data()
+    if index not in data:
+        raise HTTPException(status_code=404,detail="patient not found")
+    else:
+        return data[index]
 
 
 
