@@ -69,7 +69,7 @@ def load_data():
 
 def save_data(data):
     with open('patients1.json', 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4, default=str)
 
 @app.get('/saved')
 def home():
@@ -85,6 +85,7 @@ def home():
     #     json.dump(data,f,indent=4,default=str)
     # return {"message": "Saved succesfully"}
     save_data(data)
+    return{"kicchu na":"bc"}
 
 
 @app.get('/patient/{index}')
