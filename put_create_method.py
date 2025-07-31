@@ -1,11 +1,57 @@
 from fastapi import FastAPI, Path, HTTPException, Query
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field, computed_field
-from typing import Annotated, Literal, Optional
+from pydantic import BaseModel, Field, computed_field, EmailStr
+from typing import Annotated, Literal, Optional, List, Dict
 import json
+from datetime import date
 
 app=FastAPI()
 
+
+class Medication(BaseModel):
+    name: str
+    dose: str
+    frequency: str
+
+class Bloodwork(BaseModel):
+    glucose: float
+    hdl: float
+    ldl: float
+    triglycerides: float
+    date: date
+
+class Insurance(BaseModel):
+    provider: str
+    policy_number: str
+
+class EmergencyContact(BaseModel):
+    name: str
+    relation: str
+    phone: str
+
+class Patient(BaseModel):
+    name: str
+    city: str
+    state: str
+    age: int
+    gender: str
+    contact: str
+    email: EmailStr
+    height: float
+    weight: float
+    blood_pressure: str
+    blood_group: str
+    pulse_rate: int
+    oxygen_level: int
+    temperature: float
+    allergies: List[str]
+    chronic_conditions: List[str]
+    medications: List[Medication]
+    last_bloodwork: Bloodwork
+    last_visit: date
+    next_appointment: date
+    insurance: Insurance
+    emergency_contact: EmergencyContact
 
 
 def load_data():
@@ -18,7 +64,13 @@ def load_data():
 @app.get('/')
 def home():
     dataa=load_data()
-    return dataa
+    data=[]
+    for i,j in dataa.items():
+        val=Patient(**j)
+        data.append(val.model_dump())
+
+    return {f"type": f"{type(data)}"}
+
 
 
 

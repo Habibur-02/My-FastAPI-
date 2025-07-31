@@ -9,15 +9,38 @@
     "email": "ananya.verma@example.com",
     "height": 1.65,
     "weight": 90.0,
-    "bmi": 33.06,
     "blood_pressure": "140/90",
     "blood_group": "B+",
+    "pulse_rate": 82,
+    "oxygen_level": 97,
+    "temperature": 98.4,
     "allergies": ["peanuts", "dust"],
-    "medications": ["Metformin", "Atorvastatin"],
+    "chronic_conditions": ["PCOS", "insulin resistance"],
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500mg",
+        "frequency": "twice daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "20mg",
+        "frequency": "nightly"
+      }
+    ],
+    "last_bloodwork": {
+      "glucose": 112,
+      "hdl": 42,
+      "ldl": 148,
+      "triglycerides": 180,
+      "date": "2023-05-10"
+    },
     "last_visit": "2023-05-15",
     "next_appointment": "2023-08-20",
-    "verdict": "Obese",
-    "risk_factors": ["hypertension", "diabetes"],
+    "insurance": {
+      "provider": "Star Health",
+      "policy_number": "SH2023456"
+    },
     "emergency_contact": {
       "name": "Raj Verma",
       "relation": "husband",
@@ -34,15 +57,33 @@
     "email": "ravi.mehta@example.com",
     "height": 1.75,
     "weight": 85,
-    "bmi": 27.76,
     "blood_pressure": "130/85",
     "blood_group": "A+",
+    "pulse_rate": 78,
+    "oxygen_level": 98,
+    "temperature": 98.1,
     "allergies": ["penicillin"],
-    "medications": ["Losartan"],
+    "chronic_conditions": ["hypertension"],
+    "medications": [
+      {
+        "name": "Losartan",
+        "dose": "50mg",
+        "frequency": "daily"
+      }
+    ],
+    "last_bloodwork": {
+      "glucose": 98,
+      "hdl": 38,
+      "ldl": 132,
+      "triglycerides": 160,
+      "date": "2023-06-05"
+    },
     "last_visit": "2023-06-10",
     "next_appointment": "2023-09-05",
-    "verdict": "Overweight",
-    "risk_factors": ["high cholesterol"],
+    "insurance": {
+      "provider": "ICICI Lombard",
+      "policy_number": "IL2023789"
+    },
     "emergency_contact": {
       "name": "Priya Mehta",
       "relation": "wife",
@@ -59,15 +100,34 @@
     "email": "sneha.k@example.com",
     "height": 1.6,
     "weight": 45,
-    "bmi": 17.58,
     "blood_pressure": "90/60",
     "blood_group": "O-",
+    "pulse_rate": 85,
+    "oxygen_level": 99,
+    "temperature": 97.8,
     "allergies": [],
-    "medications": ["Iron supplements"],
+    "chronic_conditions": ["iron deficiency anemia"],
+    "medications": [
+      {
+        "name": "Ferrous sulfate",
+        "dose": "325mg",
+        "frequency": "daily"
+      }
+    ],
+    "last_bloodwork": {
+      "glucose": 88,
+      "hdl": 45,
+      "ldl": 95,
+      "triglycerides": 110,
+      "hemoglobin": 10.2,
+      "date": "2023-04-18"
+    },
     "last_visit": "2023-04-22",
     "next_appointment": "2023-07-30",
-    "verdict": "Underweight",
-    "risk_factors": ["anemia"],
+    "insurance": {
+      "provider": "HDFC Ergo",
+      "policy_number": "HE2023123"
+    },
     "emergency_contact": {
       "name": "Amit Kulkarni",
       "relation": "father",
@@ -84,15 +144,27 @@
     "email": "arjun.verma@example.com",
     "height": 1.8,
     "weight": 90.0,
-    "bmi": 27.78,
     "blood_pressure": "120/80",
     "blood_group": "AB+",
+    "pulse_rate": 72,
+    "oxygen_level": 98,
+    "temperature": 98.2,
     "allergies": ["shellfish"],
+    "chronic_conditions": [],
     "medications": [],
+    "last_bloodwork": {
+      "glucose": 92,
+      "hdl": 50,
+      "ldl": 110,
+      "triglycerides": 125,
+      "date": "2023-05-25"
+    },
     "last_visit": "2023-05-30",
     "next_appointment": "2023-11-15",
-    "verdict": "Normal",
-    "risk_factors": [],
+    "insurance": {
+      "provider": "Bajaj Allianz",
+      "policy_number": "BA2023567"
+    },
     "emergency_contact": {
       "name": "Maya Verma",
       "relation": "sister",
@@ -109,44 +181,38 @@
     "email": "neha.s@example.com",
     "height": 1.55,
     "weight": 75,
-    "bmi": 31.22,
     "blood_pressure": "135/88",
     "blood_group": "A-",
+    "pulse_rate": 80,
+    "oxygen_level": 97,
+    "temperature": 98.0,
     "allergies": ["aspirin"],
-    "medications": ["Thyroxine"],
+    "chronic_conditions": ["hypothyroidism"],
+    "medications": [
+      {
+        "name": "Levothyroxine",
+        "dose": "75mcg",
+        "frequency": "daily"
+      }
+    ],
+    "last_bloodwork": {
+      "glucose": 105,
+      "hdl": 40,
+      "ldl": 140,
+      "triglycerides": 175,
+      "tsh": 4.2,
+      "date": "2023-06-01"
+    },
     "last_visit": "2023-06-05",
     "next_appointment": "2023-08-25",
-    "verdict": "Obese",
-    "risk_factors": ["hypothyroidism"],
+    "insurance": {
+      "provider": "New India Assurance",
+      "policy_number": "NI2023890"
+    },
     "emergency_contact": {
       "name": "Rahul Sinha",
       "relation": "brother",
       "phone": "8899776656"
-    }
-  },
-  "P006": {
-    "name": "Vikram Patel",
-    "city": "Ahmedabad",
-    "state": "Gujarat",
-    "age": 45,
-    "gender": "male",
-    "contact": "7766554433",
-    "email": "vikram.p@example.com",
-    "height": 1.72,
-    "weight": 82,
-    "bmi": 27.71,
-    "blood_pressure": "142/92",
-    "blood_group": "B-",
-    "allergies": ["sulfa drugs"],
-    "medications": ["Metoprolol", "Simvastatin"],
-    "last_visit": "2023-07-10",
-    "next_appointment": "2023-10-10",
-    "verdict": "Overweight",
-    "risk_factors": ["hypertension", "family history of heart disease"],
-    "emergency_contact": {
-      "name": "Geeta Patel",
-      "relation": "wife",
-      "phone": "7766554434"
     }
   }
 }
