@@ -35,10 +35,10 @@
             }
         ],
         "last_bloodwork": {
-            "glucose": 112.0,
-            "hdl": 42.0,
-            "ldl": 148.0,
-            "triglycerides": 180.0,
+            "glucose": 112,
+            "hdl": 42,
+            "ldl": 148,
+            "triglycerides": 180,
             "date": "2023-05-10"
         },
         "last_visit": "2023-05-15",
@@ -51,9 +51,7 @@
             "name": "Raj Verma",
             "relation": "husband",
             "phone": "9876543211"
-        },
-        "bmi": 33.057851239669425,
-        "verdict": "Obese"
+        }
     },
     "P002": {
         "name": "Ravi Mehta",
@@ -64,7 +62,7 @@
         "contact": "8877665544",
         "email": "ravi.mehta@example.com",
         "height": 1.75,
-        "weight": 85.0,
+        "weight": 85,
         "blood_pressure": "130/85",
         "blood_group": "A+",
         "pulse_rate": 78,
@@ -84,10 +82,10 @@
             }
         ],
         "last_bloodwork": {
-            "glucose": 98.0,
-            "hdl": 38.0,
-            "ldl": 132.0,
-            "triglycerides": 160.0,
+            "glucose": 98,
+            "hdl": 38,
+            "ldl": 132,
+            "triglycerides": 160,
             "date": "2023-06-05"
         },
         "last_visit": "2023-06-10",
@@ -100,9 +98,7 @@
             "name": "Priya Mehta",
             "relation": "wife",
             "phone": "8877665545"
-        },
-        "bmi": 27.755102040816325,
-        "verdict": "Normal"
+        }
     },
     "P003": {
         "name": "Sneha Kulkarni",
@@ -113,7 +109,7 @@
         "contact": "7788996655",
         "email": "sneha.k@example.com",
         "height": 1.6,
-        "weight": 45.0,
+        "weight": 45,
         "blood_pressure": "90/60",
         "blood_group": "O-",
         "pulse_rate": 85,
@@ -131,10 +127,11 @@
             }
         ],
         "last_bloodwork": {
-            "glucose": 88.0,
-            "hdl": 45.0,
-            "ldl": 95.0,
-            "triglycerides": 110.0,
+            "glucose": 88,
+            "hdl": 45,
+            "ldl": 95,
+            "triglycerides": 110,
+            "hemoglobin": 10.2,
             "date": "2023-04-18"
         },
         "last_visit": "2023-04-22",
@@ -147,9 +144,7 @@
             "name": "Amit Kulkarni",
             "relation": "father",
             "phone": "7788996656"
-        },
-        "bmi": 17.578124999999996,
-        "verdict": "Underweight"
+        }
     },
     "P004": {
         "name": "Arjun Verma",
@@ -172,10 +167,10 @@
         "chronic_conditions": [],
         "medications": [],
         "last_bloodwork": {
-            "glucose": 92.0,
-            "hdl": 50.0,
-            "ldl": 110.0,
-            "triglycerides": 125.0,
+            "glucose": 92,
+            "hdl": 50,
+            "ldl": 110,
+            "triglycerides": 125,
             "date": "2023-05-25"
         },
         "last_visit": "2023-05-30",
@@ -188,9 +183,7 @@
             "name": "Maya Verma",
             "relation": "sister",
             "phone": "9988776656"
-        },
-        "bmi": 27.777777777777775,
-        "verdict": "Normal"
+        }
     },
     "P005": {
         "name": "Neha Sinha",
@@ -201,7 +194,7 @@
         "contact": "8899776655",
         "email": "neha.s@example.com",
         "height": 1.55,
-        "weight": 75.0,
+        "weight": 75,
         "blood_pressure": "135/88",
         "blood_group": "A-",
         "pulse_rate": 80,
@@ -221,10 +214,11 @@
             }
         ],
         "last_bloodwork": {
-            "glucose": 105.0,
-            "hdl": 40.0,
-            "ldl": 140.0,
-            "triglycerides": 175.0,
+            "glucose": 105,
+            "hdl": 40,
+            "ldl": 140,
+            "triglycerides": 175,
+            "tsh": 4.2,
             "date": "2023-06-01"
         },
         "last_visit": "2023-06-05",
@@ -237,8 +231,55 @@
             "name": "Rahul Sinha",
             "relation": "brother",
             "phone": "8899776656"
+        }
+    },
+    "P0070": {
+        "name": "",
+        "city": "string",
+        "state": "string",
+        "age": 1,
+        "gender": "string",
+        "contact": "string",
+        "email": "user@example.com",
+        "height": 1.0,
+        "weight": 1.0,
+        "blood_pressure": "string",
+        "blood_group": "string",
+        "pulse_rate": 0,
+        "oxygen_level": 0,
+        "temperature": 0.0,
+        "allergies": [
+            "string"
+        ],
+        "chronic_conditions": [
+            "string"
+        ],
+        "medications": [
+            {
+                "name": "string",
+                "dose": "string",
+                "frequency": "string"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 0.0,
+            "hdl": 0.0,
+            "ldl": 0.0,
+            "triglycerides": 0.0,
+            "date": "2025-07-31"
         },
-        "bmi": 31.217481789802285,
-        "verdict": "Obese"
+        "last_visit": "2025-07-31",
+        "next_appointment": "2025-07-31",
+        "insurance": {
+            "provider": "string",
+            "policy_number": "string"
+        },
+        "emergency_contact": {
+            "name": "string",
+            "relation": "string",
+            "phone": "string"
+        },
+        "bmi": 1.0,
+        "verdict": "Underweight"
     }
 }
