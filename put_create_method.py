@@ -64,12 +64,11 @@ def load_data():
 @app.get('/')
 def home():
     dataa=load_data()
-    data=[]
+    data: Dict[str,Patient]={}
     for i,j in dataa.items():
         val=Patient(**j)
-        data.append(val.model_dump())
-
-    return {f"type": f"{type(data)}"}
+        data[i]=val.model_dump()
+    return data
 
 
 
