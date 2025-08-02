@@ -101,7 +101,7 @@
         }
     },
     "P003": {
-        "name": "Aasif",
+        "name": "Sneha Kulkarni",
         "city": "Pune",
         "state": "Maharashtra",
         "age": 22,
@@ -109,7 +109,7 @@
         "contact": "7788996655",
         "email": "sneha.k@example.com",
         "height": 1.6,
-        "weight": 45.0,
+        "weight": 45,
         "blood_pressure": "90/60",
         "blood_group": "O-",
         "pulse_rate": 85,
@@ -127,10 +127,11 @@
             }
         ],
         "last_bloodwork": {
-            "glucose": 88.0,
-            "hdl": 45.0,
-            "ldl": 95.0,
-            "triglycerides": 110.0,
+            "glucose": 88,
+            "hdl": 45,
+            "ldl": 95,
+            "triglycerides": 110,
+            "hemoglobin": 10.2,
             "date": "2023-04-18"
         },
         "last_visit": "2023-04-22",
@@ -143,9 +144,7 @@
             "name": "Amit Kulkarni",
             "relation": "father",
             "phone": "7788996656"
-        },
-        "bmi": 17.58,
-        "verdict": "Underweight"
+        }
     },
     "P004": {
         "name": "Arjun Verma",
@@ -184,54 +183,6 @@
             "name": "Maya Verma",
             "relation": "sister",
             "phone": "9988776656"
-        }
-    },
-    "P005": {
-        "name": "Neha Sinha",
-        "city": "Kolkata",
-        "state": "West Bengal",
-        "age": 30,
-        "gender": "female",
-        "contact": "8899776655",
-        "email": "neha.s@example.com",
-        "height": 1.55,
-        "weight": 75,
-        "blood_pressure": "135/88",
-        "blood_group": "A-",
-        "pulse_rate": 80,
-        "oxygen_level": 97,
-        "temperature": 98.0,
-        "allergies": [
-            "aspirin"
-        ],
-        "chronic_conditions": [
-            "hypothyroidism"
-        ],
-        "medications": [
-            {
-                "name": "Levothyroxine",
-                "dose": "75mcg",
-                "frequency": "daily"
-            }
-        ],
-        "last_bloodwork": {
-            "glucose": 105,
-            "hdl": 40,
-            "ldl": 140,
-            "triglycerides": 175,
-            "tsh": 4.2,
-            "date": "2023-06-01"
-        },
-        "last_visit": "2023-06-05",
-        "next_appointment": "2023-08-25",
-        "insurance": {
-            "provider": "New India Assurance",
-            "policy_number": "NI2023890"
-        },
-        "emergency_contact": {
-            "name": "Rahul Sinha",
-            "relation": "brother",
-            "phone": "8899776656"
         }
     }
 }
