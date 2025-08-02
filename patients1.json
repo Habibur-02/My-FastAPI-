@@ -1,52 +1,57 @@
 {
     "P001": {
-        "name": "string",
-        "city": "string",
-        "state": "string",
-        "age": 1,
-        "gender": "string",
-        "contact": "string",
-        "email": "user@example.com",
-        "height": 1.0,
-        "weight": 1.0,
-        "blood_pressure": "string",
-        "blood_group": "string",
-        "pulse_rate": 0,
-        "oxygen_level": 0,
-        "temperature": 0.0,
+        "name": "Ananya Verma",
+        "city": "Guwahati",
+        "state": "Assam",
+        "age": 28,
+        "gender": "female",
+        "contact": "9876543210",
+        "email": "ananya.verma@example.com",
+        "height": 1.65,
+        "weight": 90.0,
+        "blood_pressure": "140/90",
+        "blood_group": "B+",
+        "pulse_rate": 82,
+        "oxygen_level": 97,
+        "temperature": 98.4,
         "allergies": [
-            "string"
+            "peanuts",
+            "dust"
         ],
         "chronic_conditions": [
-            "string"
+            "PCOS",
+            "insulin resistance"
         ],
         "medications": [
             {
-                "name": "string",
-                "dose": "string",
-                "frequency": "string"
+                "name": "Metformin",
+                "dose": "500mg",
+                "frequency": "twice daily"
+            },
+            {
+                "name": "Atorvastatin",
+                "dose": "20mg",
+                "frequency": "nightly"
             }
         ],
         "last_bloodwork": {
-            "glucose": 0.0,
-            "hdl": 0.0,
-            "ldl": 0.0,
-            "triglycerides": 0.0,
-            "date": "2025-08-02"
+            "glucose": 112,
+            "hdl": 42,
+            "ldl": 148,
+            "triglycerides": 180,
+            "date": "2023-05-10"
         },
-        "last_visit": "2025-08-02",
-        "next_appointment": "2025-08-02",
+        "last_visit": "2023-05-15",
+        "next_appointment": "2023-08-20",
         "insurance": {
-            "provider": "string",
-            "policy_number": "string"
+            "provider": "Star Health",
+            "policy_number": "SH2023456"
         },
         "emergency_contact": {
-            "name": "string",
-            "relation": "string",
-            "phone": "string"
-        },
-        "bmi": 1.0,
-        "verdict": "Underweight"
+            "name": "Raj Verma",
+            "relation": "husband",
+            "phone": "9876543211"
+        }
     },
     "P002": {
         "name": "Ravi Mehta",
@@ -96,7 +101,7 @@
         }
     },
     "P003": {
-        "name": "Sneha Kulkarni",
+        "name": "Aasif",
         "city": "Pune",
         "state": "Maharashtra",
         "age": 22,
@@ -104,7 +109,7 @@
         "contact": "7788996655",
         "email": "sneha.k@example.com",
         "height": 1.6,
-        "weight": 45,
+        "weight": 45.0,
         "blood_pressure": "90/60",
         "blood_group": "O-",
         "pulse_rate": 85,
@@ -122,11 +127,10 @@
             }
         ],
         "last_bloodwork": {
-            "glucose": 88,
-            "hdl": 45,
-            "ldl": 95,
-            "triglycerides": 110,
-            "hemoglobin": 10.2,
+            "glucose": 88.0,
+            "hdl": 45.0,
+            "ldl": 95.0,
+            "triglycerides": 110.0,
             "date": "2023-04-18"
         },
         "last_visit": "2023-04-22",
@@ -139,7 +143,9 @@
             "name": "Amit Kulkarni",
             "relation": "father",
             "phone": "7788996656"
-        }
+        },
+        "bmi": 17.58,
+        "verdict": "Underweight"
     },
     "P004": {
         "name": "Arjun Verma",

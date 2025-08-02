@@ -77,80 +77,62 @@ class Patient(BaseModel):
 
 
 class Medication_update(BaseModel):
-    name: Optional[str] = Field(default=None, description='Medication name')
-    dose: Optional[str] = Field(default=None, description='Dosage of the medication')
-    frequency: Optional[str] = Field(default=None, description='How often the medication is taken')
+    name: Annotated[Optional[str], Field(default=None, description='Medication name')]
+    dose: Annotated[Optional[str], Field(default=None, description='Dosage of the medication')]
+    frequency: Annotated[Optional[str], Field(default=None, description='How often the medication is taken')]
+
 
 
 class Bloodwork_update(BaseModel):
-    glucose: Optional[float] = Field(default=None, description='Glucose level')
-    hdl: Optional[float] = Field(default=None, description='HDL cholesterol')
-    ldl: Optional[float] = Field(default=None, description='LDL cholesterol')
-    triglycerides: Optional[float] = Field(default=None, description='Triglyceride level')
-    date: Optional[date] = Field(default=None, description='Date of bloodwork')
+    glucose: Annotated[Optional[float], Field(default=None, description='Glucose level')]
+    hdl: Annotated[Optional[float], Field(default=None, description='HDL cholesterol')]
+    ldl: Annotated[Optional[float], Field(default=None, description='LDL cholesterol')]
+    triglycerides: Annotated[Optional[float], Field(default=None, description='Triglyceride level')]
+    date: Annotated[Optional[date], Field(default=None, description='Date of bloodwork')]
+
+
 
 
 class Insurance_update(BaseModel):
-    provider: Optional[str] = Field(default=None, description='Insurance provider name')
-    policy_number: Optional[str] = Field(default=None, description='Policy number')
+    provider: Annotated[Optional[str], Field(default=None, description='Insurance provider name')]
+    policy_number: Annotated[Optional[str], Field(default=None, description='Policy number')]
+
 
 
 class EmergencyContact_update(BaseModel):
-    name: Optional[str] = Field(default=None, description='Emergency contact name')
-    relation: Optional[str] = Field(default=None, description='Relation to patient')
-    phone: Optional[str] = Field(default=None, description='Contact phone number')
+    name: Annotated[Optional[str], Field(default=None, description='Emergency contact name')]
+    relation: Annotated[Optional[str], Field(default=None, description='Relation to patient')]
+    phone: Annotated[Optional[str], Field(default=None, description='Contact phone number')]
 
 
 class Patient_update(BaseModel):
-    name: Optional[str] = Field(default=None, description='Full name of the patient')
-    city: Optional[str] = Field(default=None, description='City of residence')
-    state: Optional[str] = Field(default=None, description='State of residence')
-    age: Optional[int] = Field(default=None, gt=0, lt=120, description='Age in years')
+    name: Annotated[Optional[str], Field(default=None, description='Full name of the patient')]
+    city: Annotated[Optional[str], Field(default=None, description='City of residence')]
+    state: Annotated[Optional[str], Field(default=None, description='State of residence')]
+    age: Annotated[Optional[int], Field(default=None, gt=0, lt=120, description='Age in years')]
+    
+    gender: Annotated[Optional[str], Field(default=None, description='Gender of the patient')]
+    contact: Annotated[Optional[str], Field(default=None, description='Phone number')]
+    email: Annotated[Optional[EmailStr], Field(default=None, description='Email address')]
 
-    gender: Optional[str] = Field(default=None, description='Gender of the patient')
-    contact: Optional[str] = Field(default=None, description='Phone number')
-    email: Optional[EmailStr] = Field(default=None, description='Email address')
+    height: Annotated[Optional[float], Field(default=None, gt=0, description='Height in meters')]
+    weight: Annotated[Optional[float], Field(default=None, gt=0, description='Weight in kilograms')]
 
-    height: Optional[float] = Field(default=None, gt=0, description='Height in meters')
-    weight: Optional[float] = Field(default=None, gt=0, description='Weight in kilograms')
+    blood_pressure: Annotated[Optional[str], Field(default=None, description='Blood pressure')]
+    blood_group: Annotated[Optional[str], Field(default=None, description='Blood group')]
+    pulse_rate: Annotated[Optional[int], Field(default=None, description='Pulse rate')]
+    oxygen_level: Annotated[Optional[int], Field(default=None, description='Oxygen saturation level')]
+    temperature: Annotated[Optional[float], Field(default=None, description='Body temperature')]
 
-    blood_pressure: Optional[str] = Field(default=None, description='Blood pressure')
-    blood_group: Optional[str] = Field(default=None, description='Blood group')
-    pulse_rate: Optional[int] = Field(default=None, description='Pulse rate')
-    oxygen_level: Optional[int] = Field(default=None, description='Oxygen saturation level')
-    temperature: Optional[float] = Field(default=None, description='Body temperature')
+    allergies: Annotated[Optional[List[str]], Field(default=None, description='Known allergies')]
+    chronic_conditions: Annotated[Optional[List[str]], Field(default=None, description='Chronic health conditions')]
+    medications: Annotated[Optional[List[Medication_update]], Field(default=None, description='Current medications')]
+    last_bloodwork: Annotated[Optional[Bloodwork_update], Field(default=None, description='Most recent bloodwork results')]
+    last_visit: Annotated[Optional[date], Field(default=None, description='Last visit date')]
+    next_appointment: Annotated[Optional[date], Field(default=None, description='Next appointment date')]
 
-    allergies: Optional[List[str]] = Field(default=None, description='Known allergies')
-    chronic_conditions: Optional[List[str]] = Field(default=None, description='Chronic health conditions')
-    medications: Optional[List[Medication_update]] = Field(default=None, description='Current medications')
-    last_bloodwork: Optional[Bloodwork_update] = Field(default=None, description='Most recent bloodwork results')
-    last_visit: Optional[date] = Field(default=None, description='Last visit date')
-    next_appointment: Optional[date] = Field(default=None, description='Next appointment date')
-
-    insurance: Optional[Insurance_update] = Field(default=None, description='Insurance information')
-    emergency_contact: Optional[EmergencyContact_update] = Field(default=None, description='Emergency contact person')
-
-    @computed_field
-    @property
-    def bmi(self) -> Optional[float]:
-        if self.height and self.weight:
-            return round(self.weight / (self.height ** 2), 2)
-        return None
-
-    @computed_field
-    @property
-    def verdict(self) -> Optional[str]:
-        if self.bmi is None:
-            return None
-        if self.bmi < 18.5:
-            return 'Underweight'
-        elif self.bmi < 25:
-            return 'Normal'
-        elif self.bmi < 30:
-            return 'Normal'
-        else:
-            return 'Obese'
-
+    insurance: Annotated[Optional[Insurance_update], Field(default=None, description='Insurance information')]
+    emergency_contact: Annotated[Optional[EmergencyContact_update], Field(default=None, description='Emergency contact person')]
 
 
 
@@ -184,5 +166,35 @@ def update(patient_id: str, patient_update:Patient_update):
     save_data(data)
     return JSONResponse(status_code=200, content={'message':'patient updated'})
 
+# @app.put('/update/{patient_id}')
+# def update(patient_id: str, patient_update: Patient_update):
+#     data = load_data()
+
+#     if patient_id not in data:
+#         raise HTTPException(status_code=404, detail="Patient not exists")
+
+#     # Extract the new values (only those provided in the request)
+#     updated_info = patient_update.model_dump(exclude_unset=True)
+
+#     # Existing patient record from the JSON file
+#     old_info = data[patient_id]
+
+#     # Merge updates into old data
+#     for key, value in updated_info.items():
+#         old_info[key] = value
+
+#     try:
+#         # Validate with full Patient model to ensure data consistency
+#         validated_patient = Patient(**old_info)
+
+#         # Convert back to dict, excluding computed fields like bmi, verdict
+#         validated_dict = validated_patient.model_dump()
+
+#         # Save back
+#         data[patient_id] = validated_dict
+#         save_data(data)
+#         return JSONResponse(status_code=200, content={'message': 'Patient updated'})
+#     except Exception as e:
+#         raise HTTPException(status_code=422, detail=f"Data validation error: {str(e)}")
 
 
