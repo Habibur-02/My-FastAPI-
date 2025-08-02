@@ -166,35 +166,6 @@ def update(patient_id: str, patient_update:Patient_update):
     save_data(data)
     return JSONResponse(status_code=200, content={'message':'patient updated'})
 
-# @app.put('/update/{patient_id}')
-# def update(patient_id: str, patient_update: Patient_update):
-#     data = load_data()
 
-#     if patient_id not in data:
-#         raise HTTPException(status_code=404, detail="Patient not exists")
-
-#     # Extract the new values (only those provided in the request)
-#     updated_info = patient_update.model_dump(exclude_unset=True)
-
-#     # Existing patient record from the JSON file
-#     old_info = data[patient_id]
-
-#     # Merge updates into old data
-#     for key, value in updated_info.items():
-#         old_info[key] = value
-
-#     try:
-#         # Validate with full Patient model to ensure data consistency
-#         validated_patient = Patient(**old_info)
-
-#         # Convert back to dict, excluding computed fields like bmi, verdict
-#         validated_dict = validated_patient.model_dump()
-
-#         # Save back
-#         data[patient_id] = validated_dict
-#         save_data(data)
-#         return JSONResponse(status_code=200, content={'message': 'Patient updated'})
-#     except Exception as e:
-#         raise HTTPException(status_code=422, detail=f"Data validation error: {str(e)}")
 
 
