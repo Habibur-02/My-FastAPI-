@@ -60,9 +60,21 @@ class Info_Create(BaseModel):
     name: Annotated[str, Field(..., description="Name Of the patient")]
     city: Annotated[str, Field(..., description="Name of the city")]
     age:  Annotated[int, Field(..., gt=0, description="Age")]
-    height: Annotated[int, Field(..., gt=0.5, description="Height of person/patient")]
-    weight: Annotated[int, Field(..., description="weight of patient")]
-
+    height: Annotated[float, Field(..., gt=0.5, description="Height of person/patient")]
+    weight: Annotated[float, Field(..., description="weight of patient")]
+    @computed_field
+    @property
+    def BMI(self)-> float:
+        return round(self.weight/(self.height**2),2)
+    
+    @computed_field
+    @property
+    def status(self)-> str:
+        # self.BMI=round(self.weight/(self.height**2),2)
+        if self.BMI>40:
+            return 'Obostha Kharap'
+        elif self.BMI<17:
+            return 'Underweight'
 
 @app.post('/create/{id}')
 def create_patirnt(id: str, validation: Info_Create):
@@ -70,11 +82,14 @@ def create_patirnt(id: str, validation: Info_Create):
     if id in data:
         raise HTTPException(status_code=404, detail="Already Exist")
     dataa=validation.dict()
+    dataa["BMI"]=validation.BMI
+    dataa["Status"]=validation.status
     data[id]=dataa
+    
     save_data(data)
     return {"Patient ID":f"{id}",
-            "Status":"Done",
-            "Ok": "Done"}
+            "Status":validation.status,
+             "Ok": "Done"}
     
 
 
