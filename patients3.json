@@ -1,0 +1,645 @@
+{
+    "P001": {
+        "name": "Emily Rose Thompson",
+        "city": "Springfield",
+        "state": "Illinois",
+        "age": 40,
+        "gender": "female",
+        "contact": "5552347891",
+        "email": "emily.thompson@email.com",
+        "height": 1.65,
+        "weight": 65.8,
+        "blood_pressure": "138/88",
+        "blood_group": "O+",
+        "pulse_rate": 76,
+        "oxygen_level": 98,
+        "temperature": 98.6,
+        "allergies": [
+            "penicillin",
+            "shellfish",
+            "latex"
+        ],
+        "chronic_conditions": [
+            "hypertension",
+            "hyperlipidemia"
+        ],
+        "medications": [
+            {
+                "name": "Lisinopril",
+                "dose": "10mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Atorvastatin",
+                "dose": "20mg",
+                "frequency": "once daily at bedtime"
+            },
+            {
+                "name": "Aspirin",
+                "dose": "81mg",
+                "frequency": "once daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 95,
+            "hdl": 58,
+            "ldl": 118,
+            "triglycerides": 95,
+            "creatinine": 0.9,
+            "bun": 18,
+            "date": "2025-09-16"
+        },
+        "last_visit": "2025-09-15",
+        "next_appointment": "2025-10-27",
+        "insurance": {
+            "provider": "Blue Cross Blue Shield",
+            "policy_number": "BCBS-847291034"
+        },
+        "emergency_contact": {
+            "name": "Michael Thompson",
+            "relation": "spouse",
+            "phone": "5552347892"
+        }
+    },
+    "P002": {
+        "name": "James Alexander Rodriguez",
+        "city": "Springfield",
+        "state": "Illinois",
+        "age": 57,
+        "gender": "male",
+        "contact": "5556789012",
+        "email": "j.rodriguez.2184@email.com",
+        "height": 1.75,
+        "weight": 111.1,
+        "blood_pressure": "145/92",
+        "blood_group": "B+",
+        "pulse_rate": 84,
+        "oxygen_level": 96,
+        "temperature": 98.8,
+        "allergies": [
+            "sulfa drugs"
+        ],
+        "chronic_conditions": [
+            "type 2 diabetes mellitus",
+            "hypertension",
+            "obesity",
+            "chronic lower back pain"
+        ],
+        "medications": [
+            {
+                "name": "Metformin",
+                "dose": "1000mg",
+                "frequency": "twice daily with meals"
+            },
+            {
+                "name": "Glipizide",
+                "dose": "10mg",
+                "frequency": "twice daily before meals"
+            },
+            {
+                "name": "Lisinopril",
+                "dose": "20mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Tramadol",
+                "dose": "50mg",
+                "frequency": "every 6 hours as needed"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 285,
+            "hba1c": 9.2,
+            "hdl": 32,
+            "ldl": 158,
+            "triglycerides": 245,
+            "microalbumin_creatinine_ratio": 45,
+            "date": "2025-09-11"
+        },
+        "last_visit": "2025-09-10",
+        "next_appointment": "2025-12-10",
+        "insurance": {
+            "provider": "Medicaid",
+            "policy_number": "MCD-IL-2184567"
+        },
+        "emergency_contact": {
+            "name": "Maria Rodriguez",
+            "relation": "ex-wife",
+            "phone": "5557890123"
+        }
+    },
+    "P003": {
+        "name": "Sarah Chen Williams",
+        "city": "Chicago",
+        "state": "Illinois",
+        "age": 24,
+        "gender": "female",
+        "contact": "3125678901",
+        "email": "sarah.chen.williams@email.com",
+        "height": 1.62,
+        "weight": 58.2,
+        "blood_pressure": "110/70",
+        "blood_group": "A+",
+        "pulse_rate": 68,
+        "oxygen_level": 99,
+        "temperature": 98.1,
+        "allergies": [
+            "iodine contrast"
+        ],
+        "chronic_conditions": [
+            "anxiety disorder",
+            "hypothyroidism"
+        ],
+        "medications": [
+            {
+                "name": "Levothyroxine",
+                "dose": "88mcg",
+                "frequency": "once daily on empty stomach"
+            },
+            {
+                "name": "Sertraline",
+                "dose": "50mg",
+                "frequency": "once daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 87,
+            "hdl": 72,
+            "ldl": 95,
+            "triglycerides": 88,
+            "tsh": 2.1,
+            "free_t4": 1.3,
+            "vitamin_d": 28,
+            "date": "2025-08-20"
+        },
+        "last_visit": "2025-08-25",
+        "next_appointment": "2025-11-25",
+        "insurance": {
+            "provider": "Aetna",
+            "policy_number": "AET-2025-3456"
+        },
+        "emergency_contact": {
+            "name": "David Chen",
+            "relation": "father",
+            "phone": "3125678902"
+        }
+    },
+    "P004": {
+        "name": "Marcus Johnson",
+        "city": "Detroit",
+        "state": "Michigan",
+        "age": 45,
+        "gender": "male",
+        "contact": "3138901234",
+        "email": "marcus.johnson@email.com",
+        "height": 1.83,
+        "weight": 92.5,
+        "blood_pressure": "150/95",
+        "blood_group": "O-",
+        "pulse_rate": 88,
+        "oxygen_level": 97,
+        "temperature": 98.4,
+        "allergies": [
+            "codeine",
+            "morphine"
+        ],
+        "chronic_conditions": [
+            "hypertension",
+            "gout",
+            "sleep apnea"
+        ],
+        "medications": [
+            {
+                "name": "Amlodipine",
+                "dose": "10mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "dose": "25mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Allopurinol",
+                "dose": "300mg",
+                "frequency": "once daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 108,
+            "hdl": 38,
+            "ldl": 145,
+            "triglycerides": 198,
+            "uric_acid": 7.8,
+            "creatinine": 1.1,
+            "date": "2025-07-15"
+        },
+        "last_visit": "2025-07-20",
+        "next_appointment": "2025-10-20",
+        "insurance": {
+            "provider": "United Healthcare",
+            "policy_number": "UHC-2025-7890"
+        },
+        "emergency_contact": {
+            "name": "Lisa Johnson",
+            "relation": "wife",
+            "phone": "3138901235"
+        }
+    },
+    "P005": {
+        "name": "Priya Patel",
+        "city": "Houston",
+        "state": "Texas",
+        "age": 32,
+        "gender": "female",
+        "contact": "7134567890",
+        "email": "priya.patel@email.com",
+        "height": 1.58,
+        "weight": 63.0,
+        "blood_pressure": "125/80",
+        "blood_group": "AB+",
+        "pulse_rate": 72,
+        "oxygen_level": 98,
+        "temperature": 98.0,
+        "allergies": [
+            "sulfonamides",
+            "NSAIDs"
+        ],
+        "chronic_conditions": [
+            "PCOS",
+            "insulin resistance",
+            "migraine"
+        ],
+        "medications": [
+            {
+                "name": "Metformin",
+                "dose": "850mg",
+                "frequency": "twice daily with meals"
+            },
+            {
+                "name": "Spironolactone",
+                "dose": "100mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Sumatriptan",
+                "dose": "50mg",
+                "frequency": "as needed for migraine"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 118,
+            "hba1c": 5.8,
+            "hdl": 48,
+            "ldl": 125,
+            "triglycerides": 165,
+            "testosterone": 55,
+            "dhea_sulfate": 385,
+            "date": "2025-06-10"
+        },
+        "last_visit": "2025-06-15",
+        "next_appointment": "2025-09-15",
+        "insurance": {
+            "provider": "Cigna",
+            "policy_number": "CIG-2025-1122"
+        },
+        "emergency_contact": {
+            "name": "Raj Patel",
+            "relation": "husband",
+            "phone": "7134567891"
+        }
+    },
+    "P006": {
+        "name": "Robert Wilson",
+        "city": "Phoenix",
+        "state": "Arizona",
+        "age": 67,
+        "gender": "male",
+        "contact": "6025678901",
+        "email": "robert.wilson@email.com",
+        "height": 1.78,
+        "weight": 85.5,
+        "blood_pressure": "140/85",
+        "blood_group": "A-",
+        "pulse_rate": 65,
+        "oxygen_level": 96,
+        "temperature": 97.9,
+        "allergies": [
+            "contrast dye",
+            "eggs"
+        ],
+        "chronic_conditions": [
+            "coronary artery disease",
+            "type 2 diabetes",
+            "osteoarthritis"
+        ],
+        "medications": [
+            {
+                "name": "Metoprolol",
+                "dose": "50mg",
+                "frequency": "twice daily"
+            },
+            {
+                "name": "Atorvastatin",
+                "dose": "40mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Lantus insulin",
+                "dose": "24 units",
+                "frequency": "once daily at bedtime"
+            },
+            {
+                "name": "Humalog insulin",
+                "dose": "sliding scale",
+                "frequency": "with meals"
+            },
+            {
+                "name": "Celebrex",
+                "dose": "200mg",
+                "frequency": "once daily with food"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 156,
+            "hba1c": 7.8,
+            "hdl": 42,
+            "ldl": 88,
+            "triglycerides": 185,
+            "creatinine": 1.3,
+            "microalbumin": 85,
+            "date": "2025-08-05"
+        },
+        "last_visit": "2025-08-10",
+        "next_appointment": "2025-11-10",
+        "insurance": {
+            "provider": "Medicare + Humana",
+            "policy_number": "MED-HUM-6789"
+        },
+        "emergency_contact": {
+            "name": "Nancy Wilson",
+            "relation": "wife",
+            "phone": "6025678902"
+        }
+    },
+    "P007": {
+        "name": "Jennifer Martinez",
+        "city": "Los Angeles",
+        "state": "California",
+        "age": 29,
+        "gender": "female",
+        "contact": "2139876543",
+        "email": "jennifer.martinez@email.com",
+        "height": 1.67,
+        "weight": 70.2,
+        "blood_pressure": "118/75",
+        "blood_group": "B-",
+        "pulse_rate": 75,
+        "oxygen_level": 99,
+        "temperature": 98.3,
+        "allergies": [
+            "latex",
+            "nickel"
+        ],
+        "chronic_conditions": [
+            "asthma",
+            "seasonal allergies"
+        ],
+        "medications": [
+            {
+                "name": "Albuterol inhaler",
+                "dose": "90mcg",
+                "frequency": "2 puffs every 4-6 hours as needed"
+            },
+            {
+                "name": "Fluticasone nasal spray",
+                "dose": "50mcg",
+                "frequency": "2 sprays each nostril daily"
+            },
+            {
+                "name": "Loratadine",
+                "dose": "10mg",
+                "frequency": "once daily during allergy season"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 89,
+            "hdl": 65,
+            "ldl": 102,
+            "triglycerides": 95,
+            "total_ige": 285,
+            "vitamin_b12": 450,
+            "date": "2025-05-20"
+        },
+        "last_visit": "2025-05-25",
+        "next_appointment": "2025-08-25",
+        "insurance": {
+            "provider": "Kaiser Permanente",
+            "policy_number": "KP-2025-4455"
+        },
+        "emergency_contact": {
+            "name": "Carlos Martinez",
+            "relation": "brother",
+            "phone": "2139876544"
+        }
+    },
+    "P008": {
+        "name": "David Kim",
+        "city": "Seattle",
+        "state": "Washington",
+        "age": 38,
+        "gender": "male",
+        "contact": "2065432109",
+        "email": "david.kim@email.com",
+        "height": 1.72,
+        "weight": 78.0,
+        "blood_pressure": "128/82",
+        "blood_group": "AB-",
+        "pulse_rate": 70,
+        "oxygen_level": 98,
+        "temperature": 98.2,
+        "allergies": [
+            "peanuts",
+            "tree nuts"
+        ],
+        "chronic_conditions": [
+            "depression",
+            "gastroesophageal reflux disease"
+        ],
+        "medications": [
+            {
+                "name": "Escitalopram",
+                "dose": "20mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Omeprazole",
+                "dose": "40mg",
+                "frequency": "once daily before breakfast"
+            },
+            {
+                "name": "EpiPen",
+                "dose": "0.3mg",
+                "frequency": "carry at all times for emergency"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 92,
+            "hdl": 55,
+            "ldl": 115,
+            "triglycerides": 128,
+            "vitamin_d": 22,
+            "b12": 380,
+            "folate": 12.5,
+            "date": "2025-07-02"
+        },
+        "last_visit": "2025-07-08",
+        "next_appointment": "2025-10-08",
+        "insurance": {
+            "provider": "Premera Blue Cross",
+            "policy_number": "PBC-2025-9876"
+        },
+        "emergency_contact": {
+            "name": "Grace Kim",
+            "relation": "wife",
+            "phone": "2065432108"
+        }
+    },
+    "P009": {
+        "name": "Amanda Foster",
+        "city": "Miami",
+        "state": "Florida",
+        "age": 51,
+        "gender": "female",
+        "contact": "3051234567",
+        "email": "amanda.foster@email.com",
+        "height": 1.6,
+        "weight": 68.5,
+        "blood_pressure": "132/84",
+        "blood_group": "O+",
+        "pulse_rate": 78,
+        "oxygen_level": 97,
+        "temperature": 98.5,
+        "allergies": [
+            "amoxicillin",
+            "strawberries"
+        ],
+        "chronic_conditions": [
+            "fibromyalgia",
+            "osteopenia",
+            "perimenopause"
+        ],
+        "medications": [
+            {
+                "name": "Pregabalin",
+                "dose": "150mg",
+                "frequency": "twice daily"
+            },
+            {
+                "name": "Calcium citrate",
+                "dose": "1200mg",
+                "frequency": "twice daily with meals"
+            },
+            {
+                "name": "Vitamin D3",
+                "dose": "2000 IU",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Hormone replacement therapy",
+                "dose": "estradiol 0.5mg",
+                "frequency": "once daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 98,
+            "hdl": 62,
+            "ldl": 135,
+            "triglycerides": 142,
+            "vitamin_d": 32,
+            "calcium": 9.8,
+            "phosphorus": 3.2,
+            "estradiol": 45,
+            "date": "2025-06-28"
+        },
+        "last_visit": "2025-07-03",
+        "next_appointment": "2025-10-03",
+        "insurance": {
+            "provider": "Florida Blue",
+            "policy_number": "FB-2025-5678"
+        },
+        "emergency_contact": {
+            "name": "Michael Foster",
+            "relation": "ex-husband",
+            "phone": "3051234568"
+        }
+    },
+    "P010": {
+        "name": "Brian O'Connor",
+        "city": "Boston",
+        "state": "Massachusetts",
+        "age": 42,
+        "gender": "male",
+        "contact": "6177890123",
+        "email": "brian.oconnor@email.com",
+        "height": 1.85,
+        "weight": 95.2,
+        "blood_pressure": "142/90",
+        "blood_group": "A+",
+        "pulse_rate": 82,
+        "oxygen_level": 96,
+        "temperature": 98.7,
+        "allergies": [
+            "shellfish",
+            "ibuprofen"
+        ],
+        "chronic_conditions": [
+            "hypertension",
+            "hyperlipidemia",
+            "family history of heart disease"
+        ],
+        "medications": [
+            {
+                "name": "Losartan",
+                "dose": "100mg",
+                "frequency": "once daily"
+            },
+            {
+                "name": "Rosuvastatin",
+                "dose": "20mg",
+                "frequency": "once daily at bedtime"
+            },
+            {
+                "name": "Low-dose aspirin",
+                "dose": "81mg",
+                "frequency": "once daily"
+            }
+        ],
+        "last_bloodwork": {
+            "glucose": 104,
+            "hdl": 45,
+            "ldl": 128,
+            "triglycerides": 178,
+            "crp": 2.8,
+            "homocysteine": 12.5,
+            "lipoprotein_a": 35,
+            "date": "2025-08-12"
+        },
+        "last_visit": "2025-08-18",
+        "next_appointment": "2025-11-18",
+        "insurance": {
+            "provider": "Harvard Pilgrim",
+            "policy_number": "HP-2025-2345"
+        },
+        "emergency_contact": {
+            "name": "Mary O'Connor",
+            "relation": "wife",
+            "phone": "6177890124"
+        }
+    },
+    "P0010": {
+        "name": "Aasif",
+        "city": "Ahmedabad",
+        "age": 24
+    }
+}
