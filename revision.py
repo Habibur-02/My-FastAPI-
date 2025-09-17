@@ -30,5 +30,20 @@ def see_patient(p_id: str=Path(..., title = "Put Patient ID", description= " Giv
     else:
         return data[p_id]
 
+@app.get('/city')
+def city(city: str=Query(None, description="input city name")):
+    data=load_data()
+    list_p={}
+    for i in data:
+        # if city in j:
+        #     list_p.append(data[i]["name"])
+        if city==data[i]["city"]:
+            list_p.append(data[i]["name"])
+
+        
+    return list_p
+
+
+
     
 
