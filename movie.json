@@ -1,21 +1,93 @@
 {
-  "title": "Inception",
-  "director": "Christopher Nolan",
-  "release_year": 2010,
-  "genres": ["Sci-Fi", "Action", "Thriller"],
-  "rating": 8.8,
-  "cast": [
-    {
-      "actor": "Leonardo DiCaprio",
-      "role": "Dom Cobb"
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "release_year": 2010,
+    "genres": [
+        "Sci-Fi",
+        "Action",
+        "Thriller"
+    ],
+    "rating": 8.8,
+    "cast": [
+        {
+            "actor": "Leonardo DiCaprio",
+            "role": "Dom Cobb"
+        },
+        {
+            "actor": "Joseph Gordon-Levitt",
+            "role": "Arthur"
+        }
+    ],
+    "available_on": {
+        "platform": "Netflix",
+        "subscription_required": true
     },
-    {
-      "actor": "Joseph Gordon-Levitt",
-      "role": "Arthur"
+    "0": {
+        "title": "string",
+        "director": "string",
+        "release_year": 1988,
+        "genres": [
+            "string"
+        ],
+        "rating": 0.0,
+        "cast": [
+            {
+                "actor": "string",
+                "role": "string"
+            }
+        ],
+        "available_on": [
+            {
+                "platform": "string",
+                "subscription_required": true
+            }
+        ],
+        "is_classis": true
+    },
+    "1": {
+        "title": "string",
+        "director": "string",
+        "release_year": 2001,
+        "genres": [
+            "string"
+        ],
+        "rating": 0.0,
+        "cast": [
+            {
+                "actor": "string",
+                "role": "string"
+            }
+        ],
+        "available_on": [
+            {
+                "platform": "string",
+                "subscription_required": true
+            }
+        ],
+        "is_classis": false,
+        "is_classic": false
+    },
+    "2": {
+        "title": "string",
+        "director": "string",
+        "release_year": 2000,
+        "genres": [
+            "string"
+        ],
+        "rating": 9.0,
+        "cast": [
+            {
+                "actor": "string",
+                "role": "string"
+            }
+        ],
+        "available_on": [
+            {
+                "platform": "string",
+                "subscription_required": true
+            }
+        ],
+        "is_classis": true,
+        "is_classic": true
     }
-  ],
-  "available_on": {
-    "platform": "Netflix",
-    "subscription_required": true
-  }
 }
