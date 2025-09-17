@@ -1,0 +1,21 @@
+{
+  "title": "Inception",
+  "director": "Christopher Nolan",
+  "release_year": 2010,
+  "genres": ["Sci-Fi", "Action", "Thriller"],
+  "rating": 8.8,
+  "cast": [
+    {
+      "actor": "Leonardo DiCaprio",
+      "role": "Dom Cobb"
+    },
+    {
+      "actor": "Joseph Gordon-Levitt",
+      "role": "Arthur"
+    }
+  ],
+  "available_on": {
+    "platform": "Netflix",
+    "subscription_required": true
+  }
+}

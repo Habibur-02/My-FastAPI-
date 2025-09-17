@@ -60,6 +60,9 @@ class Info_Create(BaseModel):
     name: Annotated[str, Field(..., description="Name Of the patient")]
     city: Annotated[str, Field(..., description="Name of the city")]
     age:  Annotated[int, Field(..., gt=0, description="Age")]
+    height: Annotated[int, Field(..., gt=0.5, description="Height of person/patient")]
+    weight: Annotated[int, Field(..., description="weight of patient")]
+
 
 @app.post('/create/{id}')
 def create_patirnt(id: str, validation: Info_Create):
