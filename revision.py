@@ -18,4 +18,17 @@ def save_data():
 @app.get('/')
 def home():
     data=load_data()
-    return data["P001"]
+    return data["P001"]["last_bloodwork"]
+@app.get('/about')
+def about():
+    return {"abc":"Aasif is idle boy"}
+@app.get('/patient/{p_id}')
+def see_patient(p_id: str=Path(..., title = "Put Patient ID", description= " Give id of patient")):
+    data=load_data()
+    if p_id not in data:
+        raise HTTPException(status_code=404,detail="Id not found")
+    else:
+        return data[p_id]
+
+    
+
