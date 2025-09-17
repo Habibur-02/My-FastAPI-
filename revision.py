@@ -8,10 +8,14 @@ from datetime import date
 app=FastAPI()
 
 def load_data():
-    with open('patients.json','r') as f:
+    with open('new_patients.json','r') as f:
         data=json.load(f)
     return data
+def save_data():
+    with open('patients1.json', 'w') as f:
+        json.dump(data, f, indent=4, default=str)
+
 @app.get('/')
 def home():
     data=load_data()
-    return data
+    return data["P001"]
