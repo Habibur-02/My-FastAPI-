@@ -199,7 +199,7 @@ def create(patient_id : str, patient:Patient):
     daaata['verdict']=patient.verdict
     data[patient_id]=daaata
     save_data(data)
-    return {"message": "Patient created successfully", "id": patient_id}
+    return {"message": "Patient created successfully1", "id": patient_id}
 
 @app.delete('/delete/{patient_id}')
 def delete(patient_id: str, patient_delete:Patient):
