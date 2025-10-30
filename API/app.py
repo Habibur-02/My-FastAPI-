@@ -6,7 +6,7 @@ from uuid import uuid4
 
 app = FastAPI()
 
-# ইন-মেমরি "DB"
+
 DB = {"students": {}, "users": {"admin": "password"}}  # username:password
 TOKENS = {}  # token -> username
 
